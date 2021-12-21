@@ -242,7 +242,9 @@ function fun3(){
 
     }
 
-     
+    window.onbeforeunload = function(e) {
+        return 'Dialog text here.';
+     };
 
   
 
@@ -300,14 +302,16 @@ function fun3(){
       
         checkDIE();
      
-  
+
 
     }
     setInterval(setPosition,4000);
 
+ 
 
 
     function setPosition(){
+    if (gamadata.totalPlayers==4){
     for (let i=1;i<4;i++){
     if(gamadata.playerDie==2){
             document.getElementById('container').setAttribute('style','left:85%; right:0px; top:-10px;');
@@ -325,8 +329,37 @@ function fun3(){
 
         }
     
-   
 }
+    }else if (gamadata.totalPlayers==3){
+        for (let i=1;i<3;i++){
+            if(gamadata.playerDie==2){
+                    document.getElementById('container').setAttribute('style','left:85%; right:0px; top:-10px;');
+        
+                }else if(gamadata.playerDie==3){
+                    document.getElementById('container').setAttribute('style','left:85%; right:none; top:116%; bottom:-15px;');
+        
+        
+                }else {
+                    document.getElementById('container').setAttribute('style','left:0px; right:none, top:-15px');
+        
+        
+                }
+            
+        }
+
+    }else if(gamadata.totalPlayers==2){
+        for (let i=1;i<2;i++){
+            if(gamadata.playerDie==2){
+                    document.getElementById('container').setAttribute('style','left:85%; right:0px; top:-10px;');
+        
+                }else {
+                    document.getElementById('container').setAttribute('style','left:0px; right:none, top:-15px');
+        
+        
+                }
+            
+        }
+    }
 }
   
                 
