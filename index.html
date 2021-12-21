@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <link rel="stylesheet" href="game.css">
+
+</head>
+<body>
+
+
+    <div id="takeDATA">
+        <h1>
+            How Many Players will Play this Game ?
+        </h1>    </br>    
+<input type="radio" id="c1" name="radio" class="r"/><label>2</label>
+<input type="radio" id="c2"name="radio"class="r"/><label>3</label>
+<input type="radio" id="c3"name="radio"class="r"/><label>4</label>
+    </br>    </br>
+<button id="startBTN" onclick="fun1()">Start</button>
+
+    </div>
+
+    <div id="takeDATA2" >
+        
+        <h1>Enter The name of the Players</h1>
+      
+
+        <input type="text" id="name" placeholder="Enter Player 1 Name" class="nameclass" required /></br>
+        <input type="text" id="name" placeholder="Enter Player 2 Name" class="nameclass" required/></br>
+        <input type="text" id="name" placeholder="Enter Player 3 Name" class="nameclass" required/></br>
+        <input type="text" id="name" placeholder="Enter Player 4 Name" class="nameclass" required/> </br>
+        <input type="submit" onclick="fun3()" value="Start Game"/>
+    
+    </div>
+ 
+
+    <div id="mainGame">
+
+        <div id="d1" class="playerDIV">
+
+            <div id="p1" class="p"></div>
+            <div id="p2" class="p"></div>
+            <div id="p3" class="p"></div>
+            <div id="p4" class="p"></div>
+            <div id="pname1" class="pname"></div>
+
+        </div>
+        <div id="d2" class="playerDIV">
+            
+            <div id="p1" class="p"></div>
+            <div id="p2" class="p"></div>
+            <div id="p3" class="p"></div>
+            <div id="p4" class="p"></div>
+            <div id="pname2" class="pname"></div>
+
+        </div>
+        <div id="d3" class="playerDIV">
+            
+            <div id="p1" class="p"></div>
+            <div id="p2" class="p"></div>
+            <div id="p3" class="p"></div>
+            <div id="p4" class="p"></div>
+            <div id="pname3" class="pname"></div>
+
+        </div>
+        <div id="d4" class="playerDIV">
+            
+            <div id="p1" class="p"></div>
+            <div id="p2" class="p"></div>
+            <div id="p3" class="p"></div>
+            <div id="p4" class="p"></div>
+            <div id="pname4" class="pname"></div>
+
+        </div>
+
+        <!-- small colons -->
+        <div id="set1">
+            <div id="k63" class="o"></div>
+            <div id="k62" class="o"></div>
+            <div id="k61" class="o"></div>
+            <div id="k60" class="o"></div>
+            <div id="k59" class="o"></div>
+            <div id="k58" class="o"></div>
+            </div>
+            <div id="set2">
+
+            <div id="k64" class="o"></div>
+            <div id="k65" class="o"></div>
+            <div id="k66" class="o"></div>
+            <div id="k67" class="o"></div>
+            <div id="k68" class="o"></div>
+            <div id="k69" class="o"></div>
+
+            </div>
+            <div id="set3">
+            <div id="k13" class="o"></div>
+            <div id="k14" class="o"></div>
+            <div id="k15" class="o"></div>
+            <div id="k16" class="o"></div>
+            <div id="k17" class="o"></div>
+            <div id="k18" class="o"></div>
+</div>
+<div id="set4">
+
+            
+            <div id="k19" class="o"></div>
+            <div id="k20" class="o"></div>
+            <div id="k21" class="o"></div>
+            <div id="k22" class="o"></div>
+            <div id="k23" class="o"></div>
+            <div id="k24" class="o"></div>
+</div>
+<div id="set5">
+
+            <div id="k30s" class="o"></div>
+            <div id="k29s" class="o"></div>
+            <div id="k28s" class="o"></div>
+            <div id="k27s" class="o"></div>
+            <div id="k26s" class="o"></div>
+            <div id="k25" class="o"></div>
+   </div>
+            <div id="set6">
+
+            <div id="k31" class="o"></div>
+            <div id="k30" class="o"></div>
+            <div id="k29" class="o"></div>
+            <div id="k28" class="o"></div>
+            <div id="k27" class="o"></div>
+            <div id="k26" class="o"></div>
+</div>
+<div id="set7">
+            <div id="k32" class="o"></div>
+            <div id="k33" class="o"></div>
+            <div id="k34" class="o"></div>
+            <div id="k35" class="o"></div>
+            <div id="k36" class="o"></div>
+            <div id="k37" class="o"></div>
+
+
+            </div>
+            <div id="set8">
+
+            <div id="k43s" class="o"></div>
+            <div id="k42s" class="o"></div>
+            <div id="k41s" class="o"></div>
+            <div id="k40s" class="o"></div>
+            <div id="k39s" class="o"></div>
+            <div id="k38" class="o"></div>
+        </div>
+        <div id="set9">
+
+            <div id="k44" class="o"></div>
+            <div id="k43" class="o"></div>
+            <div id="k42" class="o"></div>
+            <div id="k41" class="o"></div>
+            <div id="k40" class="o"></div>
+            <div id="k39" class="o"></div>
+
+</div>
+<div id="set10">
+            <div id="k52" class="o"></div>
+            <div id="k53" class="o"></div>
+            <div id="k54" class="o"></div>
+            <div id="k55" class="o"></div>
+            <div id="k56" class="o"></div>
+            <div id="k57" class="o"></div>
+    </div>
+    <div id="set11">
+
+            <div id="k51" class="o"></div>
+            <div id="k52s" class="o"></div>
+            <div id="k53s" class="o"></div>
+            <div id="k54s" class="o"></div>
+            <div id="k55s" class="o"></div>
+            <div id="k56s" class="o"></div>
+        </div>
+        <div id="set12">
+
+            <div id="k50" class="o"></div>
+            <div id="k49" class="o"></div>
+            <div id="k48" class="o"></div>
+            <div id="k47" class="o"></div>
+            <div id="k46" class="o"></div>
+            <div id="k45" class="o"></div>
+            </div>
+            <div id="centerDiv">
+
+          
+
+            </div>
+
+ 
+            <!-- red -->
+            <img src="./images/red1.png" alt="red1"  class="playerDIE" id="red1" onclick="runred('red1')"/>
+            <img src="./images/red2.png" alt="red2"  class="playerDIE" id="red2" onclick="runred('red2')"/>
+            <img src="./images/red3.png" alt="red3"  class="playerDIE" id="red3" onclick="runred('red3')"/>
+            <img src="./images/red4.png" alt="red4"  class="playerDIE" id="red4" onclick="runred('red4')"/>
+                       <!-- green -->
+                       <img src="./images/green1.png" alt="green1"  class="playerDIE" id="green1" onclick="rungreen('green1')"/>
+                       <img src="./images/green2.png" alt="green1"  class="playerDIE" id="green2"onclick="rungreen('green2') "/>
+                       <img src="./images/green3.png" alt="green1"  class="playerDIE" id="green3" onclick="rungreen('green3')"/>
+                       <img src="./images/green4.png" alt="green1"  class="playerDIE" id="green4"onclick="rungreen('green4') "/>
+           
+            <!-- blue -->
+            <img src="./images/blue1.png" alt="blue1"  class="playerDIE" id="blue1" onclick="runblue('blue1')"/>
+            <img src="./images/blue2.png" alt="blue2"  class="playerDIE" id="blue2" onclick="runblue('blue2')"/>
+            <img src="./images/blue3.png" alt="blue3"  class="playerDIE" id="blue3" onclick="runblue('blue3')"/>
+            <img src="./images/blue4.png" alt="blue4"  class="playerDIE" id="blue4" onclick="runblue('blue4')"/>
+             <!-- yellow -->
+             <img src="./images/yellow1.png" alt="yellow1"  class="playerDIE" id="yellow1" onclick="runyellow('yellow1')"/>
+             <img src="./images/yellow2.png" alt="yellow2"  class="playerDIE" id="yellow2" onclick="runyellow('yellow2')"/>
+             <img src="./images/yellow3.png" alt="yellow3"  class="playerDIE" id="yellow3" onclick="runyellow('yellow3')"/>
+             <img src="./images/yellow4.png" alt="yellow4"  class="playerDIE" id="yellow4" onclick="runyellow('yellow4')"/>
+
+
+<div id="container">
+             <div id="dice" onclick="dice()">
+                <div class="side" id="s1">
+                </div>
+                <div class="side" id="s2">
+            </div>
+                <div class="side" id="s3">
+                
+                </div>
+                <div class="side" id="s4">
+            
+                </div>
+                <div class="side" id="s5">
+            
+                </div>
+                <div class="side" id="s6">
+                    
+                </div>
+            </div>
+            </div>
+    </div>
+
+     <!-- <input type="text"  id="testing" class="comon1"/>
+    <button onclick="dice();" class="comon">check</button>  -->
+    <div id="winnerboard">
+        <label id="textgame">Game Over!</label>
+        <label class="winname" id="winfirst">wineers name</label>
+        <label class="winname" id="winsecond">wineers name</label>
+        <label class="winname" id="winthird">wineers name</label>
+        <label class="winname" id="winforth">wineers name</label>
+        <button onclick="window.location.reload();" style="margin-top:20px; padding: 5px; padding-left: 10px; padding-right: 10px;">Play Again</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+    <script src="game.js"></script>
+
+
+
+</body>
+</html>

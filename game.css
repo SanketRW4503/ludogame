@@ -1,0 +1,629 @@
+
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body{
+        background-color: rgb(42, 42, 156);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #takeDATA ,#takeDATA2{
+
+        background-color: white;
+        padding: 30px;
+        width: max-content;
+        margin: 0% auto;
+        margin-top: 10%;
+        text-align: center;
+        border-radius: 10px ;
+        /* display: none; */
+    }
+
+    #takeDATA2{
+
+        display: none;
+
+    }
+    #startBTN{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+        background-color: rgb(76, 76, 241);
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+   
+
+    .nameclass{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 10px;
+        outline: none;
+        margin-top: 5px;
+  
+
+    }
+
+    #startBTN2{
+        margin-top: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+        background-color: rgb(76, 76, 241);
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #mainGame{
+        background-color: white;
+     
+        width: 374px;
+        height: 374px;
+        margin: 0% auto;
+        border:  2px solid black;
+        border-radius: 5px;
+        position: relative;
+
+        top: 80px;
+        display: none;
+    }
+
+    .playerDIV{
+        height: 151px;
+        width: 151px;
+        position: absolute;
+    }
+
+    #d1{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+
+    }
+    #d2{
+        top: 0px;
+        right: 0px;
+        background-color: green;
+    }
+    #d3{
+        left: 0px;
+        bottom: 0px;
+        background-color: blue;
+    }
+    #d4{
+        background-color: yellow;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .o{
+        border: 1px solid black;
+        background-color: white;
+        height: 23px;
+        width: 23px;
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    }
+
+    #set1 , #set2 ,#set3,#set4,#set5,#set6,#set7,#set8,#set9,#set10,#set11,#set12{
+        position: absolute;
+    }
+    #set1{
+        top: 0px;
+        left: 151px;
+
+    }
+    #set2{
+        top: 0px;
+        left: 176px;
+    }
+    #set3{
+        top: 0px;
+        left: 198px;
+    }
+    #set4{
+        right: 0px;
+        display: flex;
+        flex-direction: row;
+        top: 151px;
+    }
+    #set5{
+        right: 0px;
+        top: 174px;
+
+        display: flex;
+        flex-direction: row;
+        background-color: violet;
+        z-index: 200;
+        
+    }
+    #set6{
+        top: 198px;
+      right: 0px;
+  
+        display: flex;
+        flex-direction: row;
+        background-color: violet;
+        z-index: 200;
+        
+    }
+    #set7{
+        right :151px;
+         bottom: 0px;
+  
+        display: flex;
+        flex-direction: column;
+        background-color: violet;
+        z-index: 200;
+        
+    }
+
+    #set8{
+        right :176px;
+         bottom: 0px;
+  
+        display: flex;
+        flex-direction: column;
+        background-color: violet;
+        z-index: 200;
+        
+    }   #set9{
+        right :198px;
+         bottom: 0px;
+  
+        display: flex;
+        flex-direction: column;
+        background-color: violet;
+        z-index: 200;
+        
+    }
+    #set10{
+        top: 151px;
+      left: 0px;
+  
+        display: flex;
+        flex-direction: row;
+        background-color: violet;
+        z-index: 200;
+        
+    }   #set11{
+        top: 176px;
+      left: 0px;
+  
+        display: flex;
+        flex-direction: row;
+        background-color: violet;
+        z-index: 200;
+        
+    }   #set12{
+        top: 198px;
+      left: 0px;
+  
+        display: flex;
+        flex-direction: row;
+        background-color: violet;
+        z-index: 200;
+        
+    }
+
+
+    .p{
+        height: 35px;
+        width: 35px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 30px;
+    
+    }
+    #p1{
+       position: absolute;
+       top: 20px;
+       left: 20px;
+        
+    }
+    #p2{
+       position: absolute;
+       top: 20px;
+       right: 20px;
+        
+    } #p3{
+       position: absolute;
+       bottom: 20px;
+       left: 20px;
+        
+    } #p4{
+       position: absolute;
+       bottom: 20px;
+       right: 20px;
+        
+    }
+
+
+    
+    
+
+    
+
+#centerDiv{
+    margin: 0px auto;
+    height: 74px;
+    width: 74px;
+    border-radius: 2px;
+    z-index: 400;
+    top: 150px;
+    position: relative;
+    background-image: url('images/center.JPG');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#k44s{
+    
+    border-bottom: 38px solid blue;
+    border-left: 37px solid transparent;
+    border-right: 36px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    
+}
+#a2{
+    
+    border-bottom: 37px solid rgb(241, 13, 13);
+    border-left: 38px solid transparent;
+    border-right: 37px solid transparent;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    transform: rotate(90deg);
+}#k57s{
+    
+    border-bottom: 36px solid green;
+    border-left: 37px solid transparent;
+    border-right: 36px solid transparent;
+    position: absolute;
+
+    top: 0px;    transform: rotate(180deg);
+    left: 0px;
+    right: 0px;
+
+}#k31s{
+    
+    border-bottom: 37px solid yellow;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+
+    right: 0px;
+    transform: rotate(270deg);
+
+    
+}
+
+#k65,#k66,#k67,#k68,#k69,#k14{
+    background-color: green;
+}
+
+#k27,#k26s,#k27s,#k28s,#k29s,#k30s{
+    background-color: yellow;
+}
+
+
+#k40,#k39s,#k40s,#k41s,#k42s,#k43s{
+    background-color: blue;
+}
+
+#k53,#k52s,#k53s,#k54s,#k55s,#k56s{
+    background-color: red;
+}
+#container{
+    top: -10px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+#dice{
+    top: -49px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+        transform-style: preserve-3d;  
+        transition: transform 1s ;
+}
+.side{
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border:2px solid black;
+ 
+
+                position: absolute;
+                border-radius: 10px;
+        }
+
+.pname{
+    background-color: white;
+    height: 18px;
+    position: absolute;
+    border-radius: 3px;
+    left:2px;
+    right: 2px;
+    text-align: center;
+    width: max-content;
+    font-size: 13px;
+
+}
+#pname1{
+    top: 1px;
+}
+#pname2{
+    top: 1px;
+}#pname3{
+    bottom: 1px;
+}#pname4{
+    bottom: 1px;
+}
+
+.playerDIE{
+    position: relative;
+    
+    width: 24px;
+    z-index: 700;
+}
+
+
+
+
+
+#s1{
+            background-image: url('images/one.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transform: translateZ(25px);
+        } #s2{
+            background-image: url('images/two.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transform: translateZ(-25px);
+
+
+        }
+        #s3{
+            background-image: url('images/three.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transform: translateX(25px)  rotateY(90deg);
+            
+
+        }
+
+        #s4{
+            background-image: url('images/four.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transform: translateX(-25px)  rotateY(-90deg);
+
+
+        }
+    
+     #s5{
+            background-image: url('images/five.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transform: translateY(-25px)  rotateX(90deg);
+
+        }
+        #s6{
+            background-image: url('images/six.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transform: translateY(25px)  rotateX(-90deg);
+
+        }
+
+.dot{
+
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  
+    margin: 1px;
+
+}
+
+/* delte thuis */
+.comon1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.comon{
+    position: absolute;
+    left: 0px;
+    top: 16px;
+}
+.playerDIE{
+    cursor: pointer;
+}
+
+
+#k64{
+    background-image: url('images/greenaero.png');
+    background-size: 100% 100%;
+}
+#k25{
+    background-image: url('images/yellowaero.png');
+    background-size: 100% 100%;
+}#k38{
+    background-image: url('images/blueaero.png');
+    background-size: 100% 100%;
+}#k51{
+    background-image: url('images/redaero.png');
+    background-size: 100% 100%;
+}
+
+#k22,#k35,#k48 ,#k61{
+    background-image: url('images/safe.jpg');
+    background-size: 100% 100%;
+}
+
+
+/* for responsive */
+@media (min-width:600px) {
+   #mainGame{
+       height: 500px;
+       width: 500px;
+   }
+   .playerDIV{
+       height: 203px;
+       width: 201px;
+   }
+   .o{
+       height: 31.7px;
+       width: 31.5px;  
+       border: 1px solid black;
+        background-color: white;
+      
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+   }
+   #set3{
+       left: 266px;
+   }
+   #set2{
+       left:234px;
+   }
+   #set1{
+       left: 201px;
+   }
+   #set10,#set4{
+       top: 201px;
+   }
+   #set11,#set5{
+       top: 232px;
+   }
+   #set12,#set6{
+       top: 264px;
+   }
+   #set9{
+       right: 266px;
+       z-index: 10;
+   }
+   #set8{
+       right: 234px;
+   }
+   #set7{
+       right: 201px;
+   }
+   #centerDiv{
+    width: 98px;
+    height: 95px;
+    top: 202.5px;
+
+   }
+   .p{
+       height: 50px;width: 50px;
+   }
+
+   #k44s{
+    border-bottom: 48px solid blue;
+   }
+   #a2{
+    border-bottom: 49px solid rgb(241, 13, 13);
+    border-left: 46px solid transparent;
+    border-right: 48px solid transparent;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+   }
+   #k57s{
+    border-bottom: 46px solid green;
+    border-left: 52px solid transparent;
+    border-right: 48px solid transparent;
+   }
+   #k31s{
+    border-bottom: 49px solid yellow;
+    border-left: 49px solid transparent;
+    border-right: 47px solid transparent;
+    right: 0px;
+
+   }
+}
+
+#winnerboard{
+            width: 500px;
+            height: max-content;
+            margin: 0%auto;
+            background-color:#fff;
+            display: flex;
+           margin-top: 16%;
+          flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            /* position: absolute; */
+            border-radius: 2%;   
+            display: none; 
+        }
+            #textgame{
+                font-size: 40px;
+                color: black;
+            }
+            .winname{
+                color: black;
+                font-size: 20px;
+            }
+
+
+        @media (max-width:770px) {
+            #takeDATA{
+                width: fit-content ;
+                padding:40px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            #takeDATA h1{
+                text-align: left;
+                font-size: 35px;
+            }
+
+            #takeDATA2 {
+                width: fit-content;
+
+            }
+
+            #takeDATA2{
+                font-size: 22px;
+                text-align: left;
+            }
+            
+        }
+

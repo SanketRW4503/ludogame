@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav{
+            background-color: brown;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 20px;
+            padding: 10px;
+        }
+        #menu-list{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+        #menu-list li{
+            margin-left: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        #Hamburger{
+            display: none;
+        }
+        #HamburgerClose{
+            display: none;
+            position: absolute;
+            top: 2px;
+            right: 4px;
+        }
+
+        #login-btn{
+            padding: 0px 10px 3px 10px;
+            background-color: white;
+            color: brown;
+            border-radius: 5px;
+        }
+       
+        #login-btn:hover{
+            box-shadow: 2px 2px 5px black;
+        }
+
+        @media (max-width:900px) {
+            #menu-list{
+                display: none;
+                position: absolute;
+                top: 40p;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                /* flex-direction: row;s */
+                justify-content: space-evenly;
+                background-color: brown;
+                align-items: center;
+                align-content: space-between;
+
+
+            }
+            #Hamburger{
+                display: block;
+            }
+            nav{
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>Sample.in</div>
+        <div id="Hamburger" onclick="show();">&#9776;</div>
+        <div id="menu-list">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact Us</li>
+            <li id="login-btn">Login</li>
+            <div id="HamburgerClose" onclick="closefun();">&#10005;</div>
+
+        </div>
+    </nav>
+
+<script>
+        let listdata = document.getElementById('menu-list');
+        let closelogo= document.getElementById('HamburgerClose');
+        let Hamburger= document.getElementById('Hamburger');
+    function show(){
+
+
+        listdata.style.display='block';
+        closelogo.style.display='block';
+        Hamburger.style.display='none';
+    }
+    function closefun(){
+
+
+        listdata.style.display='none';
+        closelogo.style.display='none';
+        Hamburger.style.display='block';
+    }
+
+</script>
+</body>
+</html>
